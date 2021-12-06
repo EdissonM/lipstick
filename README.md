@@ -1,20 +1,27 @@
 # lipstick
 Project1: Virtual Makeup Feature 1.
 
-![result](results/Lipstick.jpg)
-For get an automatic lipstick algorithm , we will need to follow the following sequence of steps:
+For get an automatic lipstick algorithm , we will need to follow the following sequence of steps those are implemented in [main.py](https://github.com/EdissonM/lipstick/blob/main/main.py):
+
 - Detect the facial landmarks using:
     > shape_predictor_68_face_landmarks.dat.
 - Choose the mouth landmarks and obtain that convex polygon for get a mask.
-![mask](results/mask.jpg)
-- Enhance the mask with blur for soft blending.
-![blur](results/mask_gaussian.jpg)
-- Isolate mouth and face.
-![face without mouth](results/not_mouth.jpg)
 
-![mouth](results/mouth.jpg)
+<img src="results/mask.jpg" width="500" height="500" />
+
+- Enhance the mask with blur for soft blending.
+
+<img src="results/mask_gaussian.jpg" width="500" height="500" />
+
+- Isolate mouth and face.
+
+<img src="results/not_mouth.jpg" width="500" height="500" />
+
+<img src="results/mouth.jpg" width="500" height="500" />
+
 - Apply color transformation in HSV space using Huge layer on the mouth image.
-![mouth_changed](results/mouth_changed.jpg)
+<img src="results/mouth_changed.jpg" width="500" height="500" />
+
 
 - Add mouth and face without mouth, for results.
-![result](results/Lipstick.jpg)
+<img src="results/Lipstick.jpg" width="500" height="500" />
